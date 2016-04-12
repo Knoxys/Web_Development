@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kontaktformular</title>
+	</head>
+	
+	<body>
+		<form>
+			<table border="2">
+				<!---Name, Nachname, Email--->
+				<tr>
+						<td>Nachname:</td>
+						<td><input type="text" name="nname"></td>
+				</tr>
+				<tr>
+					<td>Vorname:</td>
+					<td><input type="text" name="vname"></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="email" name"email"></td>
+				</tr>
+			</table>
+			<br>
+			<!---Auswahlmöglichkeit--->
+			<label for="weibl">Weiblich</label><input type="radio" id="weibl" name="gender" value="0">
+			<label for="maennl">Männlich</label><input type="radio" id="maennl" name="gender" value="1">
+			<!---Mehrzeiliges Eingabe--->
+			<h3>Bitte nehmen Sie hier Kontakt mit uns auf:</h3>
+			<br>
+			<textarea></textarea>
+			<button type="button" id="absenden">Submit</button>
+		</form>
+	</body>
+</html>
